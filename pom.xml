@@ -112,6 +112,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>spring-mongo-docker-compose</finalName>
 	</build>
 
 </project>

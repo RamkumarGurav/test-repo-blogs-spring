@@ -309,7 +309,7 @@ public class AuthController {
     }
 
     //------------------------LOGOUT---------------------
-    @GetMapping("/user-protected/auth/users/logout")
+    @GetMapping("/public/auth/users/logout")
     public ResponseEntity<Object> logout(HttpServletRequest request, HttpServletResponse response) {
 
 

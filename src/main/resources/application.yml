@@ -10,7 +10,6 @@ frontendURL: http://localhost:7000/api/v1
 adminSecretPassword : asdffdsa
 jwtSecretKey : 8f2e76a5e3de35467604874bba1ab395fe5151d8581a555ce6ddf1e4efa2c019
 
-#debug: true
 
 spring:
   profiles:

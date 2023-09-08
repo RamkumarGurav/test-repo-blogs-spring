@@ -28,8 +28,9 @@ public interface PostRepository extends MongoRepository<Post, String> {
 
     void deleteAllByAuthorId(String authorId);
 
-//    void DeleteByIdAndAuthorId(String id, String authorId);
-//
+    Optional<Post> findByTitleIgnoreCase(String title);
+
+
 
 
 }

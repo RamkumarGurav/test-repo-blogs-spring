@@ -13,7 +13,7 @@ public interface PostService {
     Post createPost(Post post);
     Post udpatePost(Post post);
 
-
+    Optional<Post> findPostByTitle(String title);
     List<Post> findAll();
 
 
