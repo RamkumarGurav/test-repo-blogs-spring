@@ -1,0 +1,106 @@
+
+server:
+  port: 7000  #if you use Zero as port number then you will get random portnumber every time u run main app
+  servlet:
+    context-path: /api/v1   #context path to change the root or homepath
+
+welcomeMsg : Hi! Welcome to MyBlogs API
+fromEmail: ramsender123@gmail.com
+frontendURL: http://localhost:7000/api/v1
+adminSecretPassword : asdffdsa
+jwtSecretKey : 8f2e76a5e3de35467604874bba1ab395fe5151d8581a555ce6ddf1e4efa2c019
+
+#debug: true
+
+spring:
+  profiles:
+    active: dev
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ramsender123@gmail.com
+    password: njzsdkuwnkiayxxf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        web : DEBUG
+
+#  security:
+#    user:
+#      name: root
+#      password: root
+
+
+
+
+---
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+      enabled: true
+  config:
+    activate:
+      on-profile: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://raamthecoder:1JS15ec071@cluster0.drvi6cw.mongodb.net/testdb?retryWrites=true&w=majority
+      database: testdb
+
+
+
+welcome:
+  message: Welcome to our DEV-API
+
+#actuatar management and exposing all endpoints for dev env
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+---
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+      enabled: true
+  config:
+    activate:
+      on-profile: prod
+  data:
+    mongodb:
+      uri: mongodb+srv://raamthecoder:1JS15ec071@cluster0.drvi6cw.mongodb.net/testdb?retryWrites=true&w=majority
+      database: testdb
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+welcome:
+  message: Welcome to our PROD-API
+
+#actuatar management and exposing all endpoints except env and beans for prod env
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+
+
+
+
