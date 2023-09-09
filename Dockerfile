@@ -4,7 +4,7 @@ COPY . .
 
 RUN maven clean package -DskipTests
 
-FROM openjdk:17.0.01-jdk-slim
+FROM openjdk:17.0.1-jdk-slim
 
 COPY --from=build /target/spring-mongo-docker-compose.jar spring-mongo-docker-compose.jar
 
