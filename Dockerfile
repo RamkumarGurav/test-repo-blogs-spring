@@ -1,6 +1,6 @@
 FROM maven:3.8.5-openjdk-17 as build
 
-COPY ..
+COPY . .
 
 RUN maven clean package -DskipTests
 
