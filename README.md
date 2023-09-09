@@ -36,5 +36,5 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/yourusername/spring-boot-mongodb-blogs-api.git
-   cd spring-boot-mongodb-blogs-api
+   git clone https://github.com/RamkumarGurav/test-repo-blogs-spring.git
+   cd test-repo-blogs-spring
