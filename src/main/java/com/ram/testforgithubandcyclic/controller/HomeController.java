@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @Value("${WELCOME_MSG_ENV}")
+    @Value("${welcomeMsg}")
     String welcomeMsg;
+
 
 
     @GetMapping("/")
