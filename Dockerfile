@@ -16,7 +16,7 @@ FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/test-myblogs-spring-mongo.jar test-myblogs-spring-mongo.jar
 
 # Expose port 7000 (the port your Spring Boot application listens on).
-EXPOSE 7000
+EXPOSE 8000
 
 # Define the entry point for the Docker container.
 # This command will be executed when the container is started.

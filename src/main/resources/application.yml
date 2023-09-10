@@ -1,6 +1,6 @@
 
 server:
-  port: 7000  #if you use Zero as port number then you will get random portnumber every time u run main app
+  port: 8000  #if you use Zero as port number then you will get random portnumber every time u run main app
   servlet:
     context-path: /api/v1   #context path to change the root or homepath
 
