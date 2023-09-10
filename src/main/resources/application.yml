@@ -5,6 +5,7 @@ server:
     context-path: /api/v1   #context path to change the root or homepath
 
 #welcomeMsg : ${WELCOME_MSG_ENV}
+WELCOME_MSG_ENV : "welcome to our api,I'm just testing"
 fromEmail: ramsender123@gmail.com
 frontendURL: http://localhost:7000/api/v1
 adminSecretPassword : asdffdsa
