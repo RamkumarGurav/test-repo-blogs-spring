@@ -1,7 +1,7 @@
-FROM maven:3.8.5-openjdk-17 as build
+FROM openjdk:17.0.1-jdk-slim
 
-ADD target/spring-mongo-docker-compose.jar /spring-mongo-docker-compose.jar
+ADD target/test-myblogs-spring-mongo.jar test-myblogs-spring-mongo.jar
 
 EXPOSE 7000
 
-ENTRYPOINT ["java","-jar","spring-mongo-docker-compose.jar"]
+ENTRYPOINT ["java","-jar","test-myblogs-spring-mongo.jar"]

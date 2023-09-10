@@ -112,7 +112,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-mongo-docker-compose</finalName>
+		<finalName>test-myblogs-spring-mongo</finalName>
 	</build>
 
 </project>
