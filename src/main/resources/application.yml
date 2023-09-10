@@ -4,7 +4,7 @@ server:
   servlet:
     context-path: /api/v1   #context path to change the root or homepath
 
-welcomeMsg : Hi! Welcome to MyBlogs API
+welcomeMsg : ${welcomeMsg}
 fromEmail: ramsender123@gmail.com
 frontendURL: http://localhost:7000/api/v1
 adminSecretPassword : asdffdsa
